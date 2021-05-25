@@ -1,0 +1,12 @@
+body{
+    background-color: #796465;
+    text-align: center;
+}
+
+div{
+    background-color: #CB8589;
+    color: #DCE0AF;
+    width: 300px;
+    height: 150px;
+    padding: 30px;
+}

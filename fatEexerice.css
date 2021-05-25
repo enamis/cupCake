@@ -1,0 +1,81 @@
+*{
+    transition-delay: 1s;
+    
+    
+}
+
+
+header{
+    background-image: url(https://picsum.photos/200/);
+    height: 220px;
+    
+    
+    
+}
+span {
+    font-size: 1 rem;
+    color: white;
+    
+    
+}
+
+.date{
+    
+    top: 1rem;
+    left: 19rem;
+    width: 20px;
+    color: white;
+    position: relative;
+    background-color: tomato;
+    border-radius: 50%;
+    padding-left: 15px;
+    padding-right: 15px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+
+    
+   
+}
+a[target]{
+    
+    padding:10px;
+    text-decoration: none;
+    color: white;
+    background-color: tomato;
+    position: relative;
+    top: -28px;
+    right: 0;
+}
+
+
+
+main{
+    
+    width: 370px;
+    height: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+
+    border: 50px solid grey;
+}
+section{
+    position: relative;
+    
+    
+
+    
+    
+
+}
+
+
+section:hover {
+    transform: translateY(-50%);
+    background-color: white;
+   
+    
+    
+
+}
