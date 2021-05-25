@@ -31,6 +31,14 @@ input{
     padding-left: 5px;
     color: #83AFA8;
 }
+.miniature{
+    position: relative;
+    top: -78px;
+    right: -135px;
+    margin: 0;
+    width: 30px;
+    visibility: hidden;
+}
 
 body{
     background-color:#2a8878 ;
@@ -52,6 +60,8 @@ a{
     text-decoration: none;
     color: #991d42 ;
     padding-right: 5px;
+    font-size: 25px;
+    font-weight: lighter;
 }
 .intro{
     text-align: center;
@@ -80,6 +90,7 @@ article{
 }
 section{
     margin: 5px 10px;
+   
 }
 h4{
     text-align: center;
@@ -89,14 +100,58 @@ h4{
 article p{
     border-top: 1px dotted;
     padding-top: 10px;
+    margin-top: -30px;
 }
-
-
-
-
-
 footer{
     text-align: center;
     color: #feebda;
     font-size: 20px;
+}
+
+@media screen and (min-width :1200px){
+    section{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    article{
+        width: 33%;
+        height: 200px;
+    }
+    .miniature{
+        visibility: visible;
+        right: -280px;
+       
+    }
+    .barre{
+        visibility: visible;
+    }
+    .intro img{
+        width: 100px;
+        position: relative;
+        top: -95px;
+        left: -910px;
+    }
+    .intro p{
+        column-count: 2;
+        margin-right: auto;
+        margin-left: auto;
+        height: 200px;
+        padding-top: 80px;
+        font-size: 30px;
+        font-weight: lighter;
+
+    }
+    .intro{
+        margin-bottom: 50px;
+    }
+
+    header .icon{
+        visibility: hidden;
+    }
+    input{
+        width: 200px;
+    }
 }
