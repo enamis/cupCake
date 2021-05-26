@@ -175,30 +175,38 @@ footer{
         visibility: hidden;
     }
     .tablet{
+        margin-top: 50px;
+        padding-left: 0;
+       
         display: flex;
         flex-direction: row-reverse;
+        justify-content: space-between;
+        
+    }
+    .tablet div{
+        text-align: left;
     }
     
-    /*section  {
+    section  {
         display: flex;
         justify-content: center;
         gap: 30px;
         
         
-    }*/
-    section div article{
-        width: 50%;
+    }
+    section  article{
+        width: 400px;
         
     }
     section{
-        margin: 100px;
-        
+        display: flex;
+        /*revenir a la ligne*/
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px;
+
     }
-    .lastbox{
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
+    
     .barre{
         visibility: visible;
         justify-content: space-around;
