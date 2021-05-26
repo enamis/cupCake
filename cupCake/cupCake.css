@@ -7,6 +7,7 @@
 .search{
     background-color: #0c7973;
     height: 40px;
+    position: relative;
 
 }
 .icon{
@@ -32,13 +33,16 @@ input{
     color: #83AFA8;
 }
 .miniature{
-    position: relative;
-    top: -78px;
-    right: -135px;
+    position: absolute;
+    top: -15px;
+    right: 50%;
     margin: 0;
     width: 30px;
-    visibility: hidden;
+    z-index: 1;
+    display: none;
+    transform: translate(50%);
 }
+
 
 body{
     background-color:#2a8878 ;
@@ -85,6 +89,9 @@ article{
     color: #e782a4;
     padding: 10px;
     padding-top: 29px;
+    position: relative;
+   
+
     
     
 }
@@ -100,13 +107,15 @@ h4{
 article p{
     border-top: 1px dotted;
     padding-top: 10px;
-    margin-top: -30px;
+    
 }
 footer{
     text-align: center;
     color: #feebda;
     font-size: 20px;
+    padding-bottom: 30px;
 }
+
 
 @media screen and (min-width :1200px){
     section{
@@ -121,8 +130,7 @@ footer{
         height: 200px;
     }
     .miniature{
-        visibility: visible;
-        right: -280px;
+        display: block;
        
     }
     .barre{
@@ -155,3 +163,46 @@ footer{
         width: 200px;
     }
 }
+@media screen and (min-width: 800px) and (max-width: 1200px)  {
+    input{
+       position: absolute;
+       height: 25px;
+       right: 50%;
+       transform: translate(50%);
+       
+    }
+    .icon{
+        visibility: hidden;
+    }
+    .tablet{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    /*section  {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        
+        
+    }*/
+    section div article{
+        width: 50%;
+        
+    }
+    section{
+        margin: 100px;
+        
+    }
+    .lastbox{
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .barre{
+        visibility: visible;
+        justify-content: space-around;
+    }
+       
+   }
+ 
